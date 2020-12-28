@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testAnimation.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn1"> Open</button>
+        <button class="btn2">Close</button>
+        <div class="menu">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam, ipsum facilis reiciendis temporibus eius eos dolor animi architecto quas dolorum aliquid nostrum, ex, aut nam libero fugiat excepturi atque.
+    </div>
+</div>
+<script>
+    var btn1 = document.querySelector('button.btn1');
+    var btn2 = document.querySelector('button.btn2');
+    var menu = document.querySelector('.menu')
+    console.log(btn1);
+    console.log(btn2);
+
+    btn1.addEventListener('click',function(){
+        menu.classList.add('active');
+    })
+    btn2.addEventListener('click',function(){
+        menu.classList.remove('active');
+    })
+</script>
+</body>
+</html>
